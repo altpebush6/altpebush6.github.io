@@ -12,12 +12,12 @@ $(document).ready(function() {
 		var caption = $(this).attr("title");
 
 		if(imageURL != $("#image").attr("src")){
-			$("#image").hide(500, function(){
+			$("#image").fadeOut(1000, function(){
 			
 				$("#image").attr("src", imageURL);
 				$("#caption").text(caption);
 
-				$("#image").show(500);
+				$("#image").fadeIn(1000);
 			});}
 
 		// cancel the default action of the link
