@@ -15,10 +15,16 @@ $(document).ready(function() {
 			$("#image").fadeOut(1000, function(){
 			
 				$("#image").attr("src", imageURL);
-				$("#caption").text(caption);
 
 				$("#image").fadeIn(1000);
-			});}
+			});
+			$("#caption").fadeOut(1000, function(){
+			
+				$("#caption").text(caption);
+
+				$("#caption").fadeIn(1000);
+			});
+		}
 
 		// cancel the default action of the link
 	    evt.preventDefault();
